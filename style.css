@@ -1,0 +1,420 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    background-color: hsl(226, 43%, 10%);
+    width: 100vw;
+    height: 100vh;
+    max-width: 1440px;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(2, 200px);
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.sr-only {
+    position: absolute ;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    top: auto;
+    overflow: hidden;
+}
+
+
+
+/* JEREMY  */
+
+
+.jeremy {
+    width: 200px;
+    height: 422px;
+    border-radius: 20px;
+    grid-column: 1;
+    grid-row: 1 / 2;
+    background-color: hsl(235, 46%, 20%);
+}
+
+#portrait {
+    width: 70px;
+    border: 3px solid white;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.d-w-m {
+    background-color: hsl(235, 46%, 20%);
+    padding-left: 20px;
+    font-size: 14px;
+    color: hsl(235, 45%, 61%);
+}
+
+.d-w-m p {
+    cursor: pointer;
+}
+
+
+.d-w-m p:hover {
+    color: white;
+}
+
+.report
+ {
+    padding: 15px 20px;
+    background-color: hsl(246, 80%, 60%);
+    height: 60%;
+    border-radius: 20px;
+}
+
+.report p {
+    font-size: 12px;
+    margin-top: 35px;
+    color: hsl(236, 100%, 87%);
+}
+
+.report h2 {
+    color: white;
+    font-weight: 300;
+    font-size: 30px;
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    line-height: 40px;
+}
+
+
+
+
+
+
+
+.work-text h3, .play-text h3, .study-text h3, .exercise-text h3, .social-text h3, .selfcare-text h3 {
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.work-text, .play-text, .study-text, .exercise-text, .social-text, .self-care-text {
+    cursor: pointer;
+}
+
+.hour {
+    font-size: 45px;
+    color: white;
+    font-weight: 300;
+}
+
+.previous {
+    color: hsl(236, 100%, 87%);
+    font-size: 12px;
+}
+
+
+
+
+#work {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: hsl(15, 100%, 70%);
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    background-image: url(images/icon-work.svg);
+    background-repeat: no-repeat;
+    background-size: 60px;
+    background-position: 130px 0;
+    display: flex;
+    align-items: flex-end;
+}
+
+.work-text {
+    background-color: hsl(235, 46%, 20%);
+    height: 70%;
+    border-radius: 10px;
+    margin-top: 40px;
+    padding: 10px 20px;
+    background-image: url(images/icon-ellipsis.svg);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: 165px 30px;
+    width: 100%;
+}
+
+
+
+
+
+
+#play {
+    grid-column: 3;
+    grid-row: 1;
+    background-color: hsl(195, 74%, 62%);
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    background-image: url(images/icon-play.svg);
+    background-repeat: no-repeat;
+    background-size: 60px;
+    background-position: 130px 0;
+    display: flex;
+    align-items: flex-end;
+}
+
+.play-text {
+    background-color: hsl(235, 46%, 20%);
+    height: 70%;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 40px;
+    padding: 10px 20px;
+    background-image: url(images/icon-ellipsis.svg);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: 165px 30px;
+}
+
+
+
+
+
+#study {
+    grid-column: 4;
+    grid-row: 1;
+    background-color: hsl(348, 100%, 68%);
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    background-image: url(images/icon-study.svg);
+    background-repeat: no-repeat;
+    background-size: 60px;
+    background-position: 130px 0;
+    display: flex;
+    align-items: flex-end;
+}
+
+.study-text {
+    background-color: hsl(235, 46%, 20%);
+    height: 70%;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 40px;
+    padding: 10px 20px;
+    background-image: url(images/icon-ellipsis.svg);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: 165px 30px;
+}
+
+
+
+
+
+
+#exercise {
+    grid-column: 2;
+    grid-row: 2; 
+    background-color: hsl(145, 58%, 55%);
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    background-image: url(images/icon-exercise.svg);
+    background-repeat: no-repeat;
+    background-size: 60px;
+    background-position: 130px 0;
+    display: flex;
+    align-items: flex-end;
+}
+
+.exercise-text {
+    background-color: hsl(235, 46%, 20%);
+    height: 70%;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 40px;
+    padding: 10px 20px;
+    background-image: url(images/icon-ellipsis.svg);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: 165px 30px;
+}
+
+
+
+#social {
+    grid-column: 3;
+    grid-row: 2; 
+    background-color: hsl(264, 64%, 52%);
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    background-image: url(images/icon-social.svg);
+    background-repeat: no-repeat;
+    background-size: 60px;
+    background-position: 130px -10px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.social-text {
+    background-color: hsl(235, 46%, 20%);
+    height: 70%;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 40px;
+    padding: 10px 20px;
+    background-image: url(images/icon-ellipsis.svg);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: 165px 30px;
+}
+
+
+
+
+
+#self-care {
+    grid-column: 4;
+    grid-row: 2; 
+    background-color: hsl(43, 84%, 65%);
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    background-image: url(images/icon-self-care.svg);
+    background-repeat: no-repeat;
+    background-size: 60px;
+    background-position: 130px -10px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.selfcare-text {
+    background-color: hsl(235, 46%, 20%);
+    height: 70%;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 40px;
+    padding: 10px 20px;
+    background-image: url(images/icon-ellipsis.svg);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: 165px 30px;
+}
+
+
+
+
+/* FOOTER */
+.attribution { font-size: 11px; text-align: center; color: white; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+
+/* MEDIA QUERIES  */
+
+@media screen and (max-width: 900px){
+
+    body {
+        height: 1000px;;
+        min-height: 1200px;
+    }
+
+    main {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .jeremy {
+        width: 300px;
+        height: 150px;
+        border-radius: 10px;
+    }
+
+    .jeremy-text {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    #portrait {
+        width: 40px;
+        height: 40px;
+        display: block;
+        margin: 0;
+    }
+    
+    .d-w-m {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        margin: 0;
+        height: 40%;
+        border-radius: 20px;
+        padding: 0 15px;
+    }
+
+    .d-w-m p {
+        margin: 0 10px;
+    }
+    .report
+     {
+        display: flex;
+        align-items: center;
+        height: 60%;
+    }
+    
+    .report p {
+        font-size: 12px;
+        margin: 0;
+    }
+    
+    .report h2 {
+        color: white;
+        font-weight: 300;
+        font-size: 20px;
+        font-family: 'Rubik', sans-serif;
+        margin: 0;
+    }
+
+
+    #work {
+        width: 300px;
+        height: 150px;
+        background-image: url(images/icon-work.svg);
+        background-repeat: no-repeat;
+        background-size: 60px;
+        background-position: 150px 0;
+        display: flex;
+        align-items: flex-end;
+        margin-top: 30px;
+    }
+
+    #play, #study, #exercise, #social, #self-care {
+        width: 300px;
+        height: 150px;
+    }
+
+    .previous {
+        position: relative;
+        left: 150px;
+        top: -50px;
+    }
+
+
+
+    footer {
+        margin-top: 20px;
+    }
+}
