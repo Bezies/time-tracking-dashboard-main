@@ -1,4 +1,3 @@
-const box = document.querySelectorAll(".box");
 const daily = document.querySelector("#daily");
 const weekly = document.querySelector("#weekly");
 const monthly = document.querySelector("#monthly");
